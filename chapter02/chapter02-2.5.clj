@@ -1,0 +1,30 @@
+(require '[clojure.string :as cstring])
+
+(inc 3)
+(min 3 4 5)
+(str "a" "b")
+
+(cstring/blank? "abc")
+(cstring/blank? "")
+(cstring/upper-case "hello clojure")
+(cstring/lower-case "HELLO CLOJURE")
+(count "1234")
+(def x (list 1 2 3 4))
+'(1 2 3 4)
+
+(first x)
+(rest x)
+(take 3 x)
+[1 2 3]
+[:a "asdf" 9999]
+(list :a "asdf" 9999)
+(def y [1 2 3 4])
+(get y 1)
+(y 1)
+(def person {:name "Taro" "age" 25})
+(get person "age")
+(get person :name)
+(def z (hash-map :a 3 :b 4))
+(z :a)
+(set [1 2 3])
+(range 2 10)
